@@ -1,2 +1,6 @@
 # blocks_dataprocess_and_analysis
 Esse trabalho consiste no processamento de dados coletados em uma máquina de manufatura industrial para extração de informações e predição de classificação de produto. O processo industrial consiste na metalização de filmes plásticos utilizados, em geral, para composição de embalagens alimentícias, com o objetivo de conservação de alimentos. Já os dados, são referentes a medidas de Densidade Óptica – DO coletadas por 26 sensores posicionados de forma transversal ao filme metalizado. Esses valores são essenciais para a descrição do produto formado, pois, inferem a qualidade de proteção que o filme oferece a passagem de luz, gases e vapor de água. Com isso, o objetivo desse trabalho é o tratamento dos dados fornecidos pelo processo de manufatura para classificação do filme, como aprovado ou reprovado, e a visualização das características do perfil do filme formado que favorecem a uma dada classe.
+
+#Bibliotecas
+
+Este trabalho utilizou a biblioteca ImSegm,https://github.com/Borda/pyImSegm, para segmentação dos perfis dos objetos em classes de acordo com os valores de densidade óptica, além da biblioteca Shap, https://github.com/slundberg/shap, para interpretabilidade do modelo de rede neural treinado para predição de classe dos objetos e análise de similaridade.
