@@ -1,0 +1,29 @@
+!pip install git+https://github.com/Borda/pyImSegm.git
+!pip install gco-wrapper
+!pip install shap
+import pandas
+import numpy 
+import tensorflow as tf
+import datetime
+import shap
+from typing import List
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.model_selection import train_test_split
+import sklearn.model_selection as skl
+import xgboost as xgb
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from tensorflow.keras import layers
+# %matplotlib inline
+import os, sys, glob, time
+from PIL import Image
+import matplotlib.pyplot as plt
+from skimage.segmentation import mark_boundaries
+import imsegm.utilities.data_io as tl_data
+import imsegm.pipelines as segm_pipe
+from __future__ import print_function
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Flatten
+from keras.layers import Conv2D, MaxPooling2D
+import keras.backend as K
